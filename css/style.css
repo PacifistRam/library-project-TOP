@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+body {
+    position: relative;
+}
+#add-details {
+    width: 60%;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+.wrapper {
+    /* width: 60%; */
+    max-width: 500px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    position:fixed;
+    padding: 1rem 1rem;
+    left: 30%;
+    top: 30%;
+    /* transform: translate((-50%, -50%)); */
+    z-index: 1;
+    background-color: rgb(7, 126, 126);
+    box-shadow: 0 5px 20px #ffff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    color: rgb(231, 235, 238);
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(5px) !important;
+    background-color:rgba(229, 231, 235,0.5) ;
+}
+
+.wrapper form {
+    display: inline-block;
+    flex-direction: column;
+    width: 100%;
+  
+
+}
+
+form input , form label {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+form input {
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    outline:none;
+    border: none;
+    background-color: rgb(245, 236, 236);
+    
+}
+form input:focus {
+    background-color: #ffff;
+    transition: 0.3s ease;
+}
+form .btn {
+    gap: 2rem;
+    width: 25%;
+}
+
+.container {
+    padding: 1rem 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content:center
+}
+.card {
+    background-color: grey;
+    padding: 1rem 1rem;
+    flex: 0 0 calc(300px - 1rem);
+    border-radius: 5px;
+    min-height: 300px;
+    
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  
+
+}
+.bt:hover {
+   opacity: 0.5;
+}
+.cancel-btn {
+    background-color: rgb(252, 51, 44);
+}
+#submit-btn {
+    background-color: rgb(81, 236, 81);
+}
+.remove {
+    background-color: rgb(53, 103, 240);
+}

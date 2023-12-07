@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Library Project || TOP</title>
+</head>
+<body>
+        <h1>Library Project TOP</h1>
+        <main>
+            <button class="add-btn btn">Add Books</button>
+            <div class="container">
+             <!-- -------card content goes here -->
+            </div>
+
+            
+            <dialog id="add-details">
+                <div class="wrapper">
+                    <h2>Enter Book details</h2>
+                    <form >
+                        <label for="title-text">TITLE</label>
+                        <input type="text" id="title-text" autocomplete="off">
+                        <label for="author-text">AUTHOR</label>
+                        <input type="text" id="author-text">
+                        <label for="genre-text">GENRE</label>
+                        <input type="text" id="genre-text">
+                        <label for="page-no">Pages</label>
+                        <input type="number" id="page-no">
+                        <label for="read-status-check">Read Status</label>
+                        <input type="checkbox" id="read-status-check">
+                        <button type="submit" class="btn" id="submit-btn">SUBMIT</button>
+                        <button type="button" class="btn cancel-btn btn">Cancel</button>
+                    </form>
+                </div>
+            </dialog>
+        </main>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
